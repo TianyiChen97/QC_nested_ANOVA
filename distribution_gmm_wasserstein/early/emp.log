@@ -1,0 +1,31 @@
+# Nested Frechet (W2) ANOVA of per-electrode ISI distributions — early DIV [3, 4], vehicle control
+
+Per-electrode distribution: EMPIRICAL quantile function of log10(ISI ms) (sensitivity: no mixture model); electrodes need >= 30 ISIs; thinned to >= 100 um; wells kept with >= 10 thinned electrodes: 16 wells in 6 runs, N = 364 electrodes (m per well 11-65). Quantile grid K = 200.
+
+## Frechet ANOVA table (SS in (log10 ISI)^2 units, L2 on quantile functions)
+
+| source            |       SS |   df |      MS |    F_stat |    perm_p |
+|:------------------|---------:|-----:|--------:|----------:|----------:|
+| Run               |  9.68421 |    5 | 1.93684 |   1.89857 |   0.10178 |
+| Well(Run)         | 10.2016  |   10 | 1.02016 |   6.28408 |   0.0002  |
+| Electrode (resid) | 56.4942  |  348 | 0.16234 | nan       | nan       |
+
+F_stat is the usual ratio MS_run/MS_well(run) and MS_well(run)/MS_e; its null distribution is NOT F, p-values are from 5000 permutations.
+
+## Per-run well test (permutation; eta2 = SS_well / (SS_well + SS_e) within run, Holm across runs)
+
+| run   |   wells |   SS_well |      eta2 |         p |    p_holm |
+|:------|--------:|----------:|----------:|----------:|----------:|
+| 22    |       3 |   3.29885 |   0.28129 |   0.0002  |   0.001   |
+| 23    |       1 | nan       | nan       | nan       | nan       |
+| 42    |       2 |   1.68577 |   0.23007 |   0.0088  |   0.0176  |
+| 43    |       2 |   2.12573 |   0.35305 |   0.0002  |   0.001   |
+| 45    |       2 |   0.27699 |   0.03911 |   0.18536 |   0.18536 |
+| AR    |       6 |   2.81422 |   0.08202 |   0.0036  |   0.0108  |
+
+## Variance components (Frechet variance, (log10 ISI)^2) and share of total
+
+| method                                             |   var_run |   var_well |   var_electrode |   prop_run |   prop_well |   prop_electrode |   N |
+|:---------------------------------------------------|----------:|-----------:|----------------:|-----------:|------------:|-----------------:|----:|
+| thinned (tested)                                   |   0.02071 |    0.03894 |         0.16234 |    0.09328 |     0.1754  |          0.73132 | 364 |
+| all eligible electrodes, empirical Q (descriptive) |   0.02382 |    0.02803 |         0.16791 |    0.1084  |     0.12754 |          0.76405 | 847 |

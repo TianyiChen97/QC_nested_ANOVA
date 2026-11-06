@@ -1,0 +1,16 @@
+early 22 4 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_22/DIV_4/0uM/ActivityScan/000150/data.raw.h5
+early 23 4 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_23/DIV_4/0uM/ActivityScan/000152/data.raw.h5
+early 24 4 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_24/DIV_4/0uM/ActivityScan/000160/data.raw.h5
+early 42 3 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_42/DIV_3/0uM/ActivityScan/000930/data.raw.h5
+early 43 3 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_43/DIV_3/0uM/ActivityScan/000922/data.raw.h5
+early 45 3 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_45/DIV_3/0uM/ActivityScan/001151/data.raw.h5
+early AR 4 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_AR/DIV_4/0uM/ActivityScan/000691/data.raw.h5
+well      1      2      3      4      5      6
+run                                           
+22    335.0  339.0  643.0  573.0  197.0  378.0
+23     55.0   34.0   48.0   11.0   52.0   74.0
+24      6.0   38.0    NaN    4.0   17.0   21.0
+42     96.0   61.0   88.0   37.0   15.0   63.0
+43    157.0   86.0  146.0   27.0   56.0   63.0
+45     95.0  200.0    1.0  126.0   36.0   66.0
+AR    190.0  105.0  934.0  236.0   72.0  238.0

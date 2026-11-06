@@ -1,0 +1,16 @@
+mid 22 11 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_22/DIV_11/0uM/ActivityScan/000164/data.raw.h5
+mid 23 10 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_23/DIV_10/0uM/ActivityScan/000179/data.raw.h5
+mid 24 10 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_24/DIV_10/0uM/ActivityScan/000182/data.raw.h5
+mid 42 10 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_42/DIV_10/0uM/ActivityScan/000955/data.raw.h5
+mid 43 10 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_43/DIV_10/0uM/ActivityScan/000957/data.raw.h5
+mid 45 10 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_45/DIV_10/0uM/ActivityScan/001160/data.raw.h5
+mid AR 9 /Users/tianyichen/Desktop/Postdoc Research/QC/DA data/Run_AR/DIV_9/0uM/ActivityScan/000709/data.raw.h5
+well     1     2     3     4    5     6
+run                                    
+22     618  1167   677  1092  947  1029
+23      98   104   230    97   62   117
+24     113   123    10    98   76   238
+42     762   161   576   400  331   282
+43    1001   807   509   306  253  1021
+45     186   644    96  1824  866  1476
+AR    1531   853  2093  1270  469  1386

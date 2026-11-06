@@ -1,0 +1,42 @@
+/Users/tianyichen/opt/anaconda3/lib/python3.9/site-packages/statsmodels/base/model.py:604: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn("Maximum Likelihood optimization failed to "
+/Users/tianyichen/opt/anaconda3/lib/python3.9/site-packages/statsmodels/regression/mixed_linear_model.py:2200: ConvergenceWarning: Retrying MixedLM optimization with lbfgs
+  warnings.warn(
+wid         24_w3  23_w4  24_w5  23_w5  24_w4  45_w3  23_w1  23_w2  45_w1  24_w2  43_w4  42_w6  42_w2  24_w1  24_w6  42_w5  23_w6  43_w5  42_w1  42_w4  22_w3  AR_w5  22_w1  42_w3  23_w3  45_w2  AR_w2  43_w3  AR_w4  22_w6  22_w5  22_w4  43_w1  AR_w6  45_w6  43_w6  AR_w1  22_w2  45_w5  43_w2  AR_w3  45_w4
+active_all     10     97     76     62     98     96     98    104    186    123    306    282    161    113    238    331    117    253    762    400    677    469    618    576    230    644    853    509   1270   1029    947   1092   1001   1386   1476   1021   1531   1167    866    807   2093   1824
+m_thinned       8     26     29     32     34     36     43     44     45     49     50     50     52     54     55     57     60     62     65     65     68     72     73     73     74     75     78     80     84     85     85     96     97     99    100    100    101    101    102    105    116    147
+wells kept: 41 of 42
+# Nested ANOVA: run > well > electrode, mid DIV [9, 10, 11], vehicle control, y = mean ISI [ms] (raw)
+
+Thinning: min pairwise distance d = 150 um; wells kept with m >= 10 thinned electrodes: 41 of 42 wells, 7 runs, N = 2919 electrodes. Unbalanced design (m per well 26-147).
+
+## ANOVA table (thinned); p = parametric F-test
+
+| source            |              SS |   df |      MS |        F |        p | den          |
+|:------------------|----------------:|-----:|--------:|---------:|---------:|:-------------|
+| Run               | 56756.3         |    6 | 9459.39 |   5.0445 |   0.0009 | MS_well(run) |
+| Well(Run)         | 63756           |   34 | 1875.18 |   1.4056 |   0.0601 | MS_electrode |
+| Electrode (resid) |     3.83957e+06 | 2878 | 1334.11 | nan      | nan      |              |
+
+Permutation p (5000 perms): run = 0.0024, well(run) = 0.0744
+
+## Per-run well test (thinned; parametric F with pooled MS_electrode)
+
+| run   |   wells |      F |   df1 |      p |
+|:------|--------:|-------:|------:|-------:|
+| 22    |       6 | 2.1082 |     5 | 0.0616 |
+| 23    |       6 | 3.4089 |     5 | 0.0045 |
+| 24    |       5 | 0.2903 |     4 | 0.8844 |
+| 42    |       6 | 1.5357 |     5 | 0.1752 |
+| 43    |       6 | 0.3857 |     5 | 0.8589 |
+| 45    |       6 | 0.8027 |     5 | 0.5476 |
+| AR    |       6 | 1.0843 |     5 | 0.3669 |
+
+## Variance components
+
+| method               |   var_run |   var_well |   var_electrode |   prop_run |   prop_well |   prop_electrode |     N |
+|:---------------------|----------:|-----------:|----------------:|-----------:|------------:|-----------------:|------:|
+| ANOVA thinned        |   18.3586 |     7.6975 |         1334.11 |     0.0135 |      0.0057 |           0.9808 |  2919 |
+| ANOVA all electrodes |   34.8493 |    10.223  |         1118.69 |     0.0299 |      0.0088 |           0.9613 | 25989 |
+| REML thinned         |   15.433  |     6.8031 |         1334.93 |     0.0114 |      0.005  |           0.9836 |  2919 |
+| REML all electrodes  |   16.1056 |    17.4016 |         1118.83 |     0.014  |      0.0151 |           0.9709 | 25989 |

@@ -1,0 +1,27 @@
+== mid: sig well pairs 9/75; sig wells vs rest 5/30; sig run pairs 1/21; sig runs vs rest 2/7
+run well_a well_b  n_a  n_b  W2_distance       T  p_adj  sig
+ 22      1      6   16   25       0.3706  6.4200 0.0024 True
+ 22      2      6   25   25       0.4274 10.9439 0.0002 True
+ 22      3      6   15   25       0.3562  5.6994 0.0056 True
+ 22      4      6   30   25       0.3668  8.7936 0.0004 True
+ 42      1      5   35   23       0.3159  6.6374 0.0328 True
+ 42      5      6   23   21       0.4494 10.6232 0.0016 True
+ 45      1      2   20   56       0.3525  8.7756 0.0178 True
+ 45      2      5   56   63       0.3704 19.4901 0.0002 True
+ 45      4      5  104   63       0.2115  8.4129 0.0236 True
+run well  n  W2_to_rest_of_run       T  p_adj  sig
+ 22    6 25             0.3663 12.7504 0.0002 True
+ 42    5 23             0.2804  7.4847 0.0082 True
+ 42    6 21             0.2667  6.2683 0.0204 True
+ 45    2 56             0.2232 11.0435 0.0026 True
+ 45    5 63             0.2356 13.4777 0.0010 True
+run_a run_b  wells_a  wells_b  W2_distance      T  p_adj  sig
+   22    45        6        6       0.3353 0.5534 0.0004 True
+run  wells  W2_to_other_runs      T  p_adj   sig
+ 22      6            0.2300 0.4231 0.0028  True
+ 23      1            0.2747 0.1199 0.5411 False
+ 24      1            0.1320 0.0277 0.9936 False
+ 42      6            0.0466 0.0174 0.9996 False
+ 43      6            0.0744 0.0443 0.9552 False
+ 45      6            0.1886 0.2845 0.0328  True
+ AR      6            0.0675 0.0364 0.9770 False

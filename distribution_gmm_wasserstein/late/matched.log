@@ -1,0 +1,6 @@
+late: 2021 of 2181 thinned electrodes have >=10 ISIs<200ms; dropped 160
+  analysed: N=2021, wells=41, runs=7
+A   scalar ln mean ISI (<200 ms) {'pA': 0.2561, 'pB': 0.0002, 'pr': 0.007, 'pw': 0.0654, 'pe': 0.9276, 'flagged': '23,42,43,45,AR', 'F_pA': 0.1851, 'F_pB': 0.0, 'analysis': 'A   scalar ln mean ISI (<200 ms)'}
+A'  scalar ln mean ISI (all ISIs) {'pA': 0.018, 'pB': 0.0002, 'pr': 0.0615, 'pw': 0.095, 'pe': 0.8434, 'flagged': '22,23,43,45,AR', 'F_pA': 0.0028, 'F_pB': 0.0, 'analysis': "A'  scalar ln mean ISI (all ISIs)"}
+B   Frechet, ISIs<200 ms only {'pA': 0.057, 'pB': 0.0002, 'pr': 0.0149, 'pw': 0.052, 'pe': 0.9331, 'flagged': '23,42,43,45', 'analysis': 'B   Frechet, ISIs<200 ms only'}
+B'  Frechet, all ISIs (empirical Q) {'pA': 0.0048, 'pB': 0.0002, 'pr': 0.0402, 'pw': 0.0532, 'pe': 0.9067, 'flagged': '23,24,43,45,AR', 'analysis': "B'  Frechet, all ISIs (empirical Q)"}
